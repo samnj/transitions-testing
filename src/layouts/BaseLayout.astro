@@ -1,0 +1,22 @@
+
+---
+import { ViewTransitions } from "astro:transitions"
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+    ></script>
+    <title>Astro</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <main transition:animate="slide">
+      <slot />
+    </main>
+  </body>
+</html>
